@@ -106,46 +106,4 @@ document.addEventListener("DOMContentLoaded", function () {
             rotateElement(secondNameLabelInput, letterCount, 'clockwise');
         });
     }
-
-
-
-
-
-    // Function to shake an element up and down
-    /*function rotateElementAntiClockwise(element, letterCount) {
-        let rotateAmount = letterCount * 5; // Each letter rotates the form by 5 degrees
-        if (rotateAmount > 90) {
-            rotateAmount = 90;
-        }
-        element.style.transformOrigin = "right center"; // Set the rotation origin to the left side
-        element.style.transform = `rotate(-${rotateAmount}deg)`;  // Rotate anticlockwise
-    }
-
-
-
-// Add an event listener for input to trigger the rotation
-//     const firstNameLabelInputAction = document.getElementsByClassName('firstNameLabelInput');
-    firstNameLabelInput.addEventListener('input', function() {
-        const letterCountFirstNameLabelInput = firstNameLabelInput.value.length; // Get number of letters in the input
-        rotateElementAntiClockwise(firstNameLabelInput, letterCountFirstNameLabelInput); // Rotate the form based on letter count
-    });
-
-
-    function rotateElementClockwise(element, letterCount) {
-        let rotateAmount = letterCount * 5; // Each letter rotates the form by 5 degrees
-        if (rotateAmount > 90) {
-            rotateAmount = 90;
-        }
-        element.style.transformOrigin = "left center"; // Set the rotation origin to the left side
-        element.style.transform = `rotate(${rotateAmount}deg)`;  // Rotate anticlockwise
-    }
-
-    secondNameLabelInput.addEventListener('input', function() {
-        const letterCountSecondNameLabelInput = firstNameLabelInput.value.length; // Get number of letters in the input
-        secondNameLabelInput.addEventListener('input', function() {
-            const letterCount = secondNameLabelInput.value.length; // Get number of letters in the input
-            rotateElementClockwise(secondNameLabelInput, letterCountSecondNameLabelInput); // Rotate the form based on letter count
-        })
-    });*/
-
 })
